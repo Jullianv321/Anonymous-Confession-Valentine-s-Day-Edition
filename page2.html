@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Anonymous Confessions - Page 2</title>
+ <link rel="icon" type="x-icon" href="favicon.ico">
+<style>
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ffdee9 0%, #ff9abb 100%);
+    color: #4a4a4a;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .heart {
+    position: absolute;
+    color: #ff4d88;
+    font-size: 20px;
+    animation: floatUp 6s linear infinite;
+    opacity: 0.7;
+  }
+  @keyframes floatUp {
+    0% { transform: translateY(0) rotate(0); opacity: 0.8; }
+    100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+  }
+  h1 {
+    font-size: 3rem;
+    color: #ff0066;
+    text-shadow: 0 0 10px rgba(255, 0, 102, 0.4);
+  }
+  header p {
+    font-size: 1.2rem;
+    color: #5a5a5a;
+  }
+
+  .button-wrapper {
+    max-width: 700px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+  .categories {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .category-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #ff3f89;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(255, 0, 102, 0.3);
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+  }
+  .category-button:hover {
+    background-color: #ff73a5;
+  }
+
+  .confession {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 0, 102, 0.25);
+    max-width: 700px;
+    text-align: left;
+  }
+  .confession h3 {
+    color: #ff2a77;
+    margin-bottom: 8px;
+  }
+  .confession-text {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  .confession-time {
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1rem;
+    color: #6b6b6b;
+  }
+
+  /* Pagination nav */
+  .pagination {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .pagination a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #ff3f89;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .pagination a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+    <img src="UC_LOGO.jpg" 
+     alt="Sphere" 
+     width="80" 
+     height="80" 
+     align="left" 
+     hspace="20" 
+     vspace="20" 
+     style="border-radius:50%;">
+
+<header>
+  <h1><i>UC Anonymous Confessions</i></h1>
+  <p>Share and read anonymous confessions this Valentine's Day!</p>
+</header>
+
+</div>
+
+
+<main>
+  <section class="confessions">
+
+    <article class="confession">
+      <h3>Male Confession</h3>
+      <p class="confession-text">"I finally told her how I felt, and she said she needed time."</p>
+      <p class="confession-time">Posted on February 15, 2025</p>
+    </article>
+
+    <article class="confession">
+      <h3>Female Confession</h3>
+      <p class="confession-text">"My crush noticed me today, and I can’t stop smiling."</p>
+      <p class="confession-time">Posted on February 15, 2025</p>
+    </article>
+
+    <article class="confession">
+      <h3>LGBTQ+ Confession</h3>
+      <p class="confession-text">"Coming out was scary, but I feel so free now."</p>
+      <p class="confession-time">Posted on February 15, 2025</p>
+    </article>
+
+  </section>
+</main>
+
+<div style="width: 100%; text-align: center; margin-top: 30px;">
+
+  <a href="submit.html" class="category-button" 
+     style="display: inline-block; padding: 10px 25px; background-color: #ff3f89; color: white; text-decoration: none; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 10px rgba(255,0,102,0.3); transition: 0.3s;">
+    Submit Your Confessions Here!
+  </a>
+
+  <div class="pagination" style="margin-top: 20px;">
+    <a href="index.html">&laquo; Page 1</a>
+    <a href="page2.html">Page 2 &raquo;</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>Made with ❤️ for Valentine's Day</p>
+</footer>
+
+<script>
+  for (let i = 0; i < 20; i++) {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDelay = Math.random() * 5 + "s";
+    heart.textContent = "❤️";
+    document.body.appendChild(heart);
+  }
+</script>
+
+</body>
+</html>
